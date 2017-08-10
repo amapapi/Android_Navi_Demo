@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="220dip"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:background="@color/darkgrey"
+            android:orientation="horizontal"
+            android:paddingTop="2dip">
+
+            <CheckBox
+                android:id="@+id/congestion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="躲避拥堵"
+                android:textSize="12dp" />
+
+            <CheckBox
+                android:id="@+id/avoidhightspeed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="不走高速"
+                android:textSize="12dp" />
+
+            <CheckBox
+                android:id="@+id/cost"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="躲避收费"
+                android:textSize="12dp" />
+
+            <CheckBox
+                android:id="@+id/hightspeed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="高速优先"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:background="@color/darkyellow"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/car_number"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:checked="false"
+                android:text="津DFZ582"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/startpoint"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:checked="false"
+                android:text="选起点"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/endpoint"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:checked="false"
+                android:text="选终点"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/calculate"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:checked="false"
+                android:text="开始算路"
+                android:textSize="14dp"></Button>
+
+            <Button
+                android:id="@+id/selectroute"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:text="选路径"
+                android:textSize="14dp"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:background="@color/darkyellow"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/gpsnavi"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:checked="false"
+                android:text="开始导航"
+                android:textSize="14dp"></Button>
+
+            <Button
+                android:id="@+id/emulatornavi"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:text="模拟导航"
+                android:textSize="14dp"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/navi_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
