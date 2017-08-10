@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#90343288"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="300dip"
+        android:background="@color/darkgrey"
+        android:orientation="vertical"
+        android:paddingTop="2dip">
+
+        <CheckBox
+            android:id="@+id/congestion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="躲避拥堵"
+            android:textSize="12dp" />
+
+        <CheckBox
+            android:id="@+id/avoidhightspeed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="不走高速"
+            android:textSize="12dp" />
+
+        <CheckBox
+            android:id="@+id/cost"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="躲避收费"
+            android:textSize="12dp" />
+
+        <CheckBox
+            android:id="@+id/hightspeed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="高速优先"
+            android:textSize="12dp" />
+    </LinearLayout>
+</RelativeLayout>
